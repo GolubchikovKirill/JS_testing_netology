@@ -1,5 +1,4 @@
 const webpack = require("webpack");
-
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
@@ -8,7 +7,7 @@ module.exports = {
   target: "web",
   output: {
     path: path.resolve(__dirname, "dist"),
-    publicPath: "./",
+    publicPath: "", // For GitHub Pages
     clean: true,
   },
   module: {
@@ -22,11 +21,7 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        use: [
-          {
-            loader: "html-loader",
-          },
-        ],
+        use: [{ loader: "html-loader" }],
       },
       {
         test: /\.css$/,
