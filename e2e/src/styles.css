@@ -59,30 +59,31 @@
 }
 
 .card {
-  display: grid;
-  place-items: center;
   width: 96px;
   height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--panel);
   border-radius: 12px;
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.06);
-  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease,
-    opacity 120ms ease;
-  opacity: 0.7;
+  opacity: 0.4;
+  transition: all 0.2s;
 }
 
 .card img {
-  width: 96px;
-  height: 64px;
-  display: block;
-  border-radius: 12px;
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
 }
 
 .card--active {
   opacity: 1;
-  border-color: rgba(255, 255, 255, 0.32);
+  border-color: var(--focus);
   background: var(--panel-2);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .form {
