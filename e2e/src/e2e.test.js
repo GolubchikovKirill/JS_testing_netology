@@ -10,7 +10,7 @@ describe("Credit Card Validator form", () => {
   beforeAll(async () => {
     browser = await puppetteer.launch({
       headless: true, // Режим без графического интерфейса
-      args: ['--no-sandbox', '--disable-setuid-sandbox'] // Критично для CI/CD
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
     page = await browser.newPage();
   });
@@ -24,9 +24,8 @@ describe("Credit Card Validator form", () => {
   test("should have label element for card input", async () => {
     await page.goto(baseUrl);
 
-    await page.waitForSelector('#card-input');
+    await page.waitForSelector('#card-input', { timeout: 10000 });
 
-    // Теперь проверяем наличие label
     const label = await page.$('label[for="card-input"]');
     expect(label).not.toBeNull();
 
