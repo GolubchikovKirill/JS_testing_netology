@@ -1,8 +1,7 @@
 # Домашнее задание к занятию "4.Организация тестирования"
 
-Статус сборки: ![Testing — Credit Card Validator]([https://github.com/GolubchikovKirill/Events_netology/actions/workflows/testing-deploy.yml/badge.svg?branch=video](https://golubchikovkirill.github.io/Events_netology/))
-
-GitHub Pages: https://golubchikovkirill.github.io/Events_netology/testing-e2e/
+![Build status](https://github.com/GolubchikovKirill/JS_testing_netology/actions/workflows/check.yml/badge.svg)
+[![Deploy Page](https://img.shields.io/badge/Deploy-GitHub%20Pages-blue?style=flat&logo=github)](https://golubchikovkirill.github.io/JS_testing_netology/)
 
 Правила сдачи задания:
 
