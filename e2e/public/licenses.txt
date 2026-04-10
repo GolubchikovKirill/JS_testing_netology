@@ -1,0 +1,6 @@
+Credit Card Validator — licenses
+
+Icons (Visa/Mastercard/МИР):
+- Author: Kirill (generated for учебное ДЗ)
+- License: CC0 / Public Domain dedication (можно свободно использовать)
+
