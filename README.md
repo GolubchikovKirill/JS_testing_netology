@@ -1,6 +1,6 @@
 # Домашнее задание к занятию "4.Организация тестирования"
 
-![Build status](https://github.com/GolubchikovKirill/JS_testing_netology/actions/workflows/check.yml/badge.svg)
+![Build status](https://github.com/GolubchikovKirill/JS_testing_netology/actions/workflows/web.yml/badge.svg)
 [![Deploy Page](https://img.shields.io/badge/Deploy-GitHub%20Pages-blue?style=flat&logo=github)](https://golubchikovkirill.github.io/JS_testing_netology/)
 
 Правила сдачи задания:
