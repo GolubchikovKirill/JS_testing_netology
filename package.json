@@ -4,6 +4,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "jest"
+    "test": "jest",
+    "test:unit": "jest src/validate.test.js"
   }
 }
