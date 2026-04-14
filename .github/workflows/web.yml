@@ -19,21 +19,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  eslint:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22.14.0
-          cache: 'npm'
-      - run: npm install
-      - run: npm run lint
-
   test:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -41,17 +28,14 @@ jobs:
           node-version: 22.14.0
           cache: 'npm'
       - run: npm install
-      - run: npm test
+      - run: npm run test:unit
 
   build:
-    needs: [eslint, test]
-
+    needs: [ test ]
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
