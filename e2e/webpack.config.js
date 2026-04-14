@@ -7,7 +7,7 @@ module.exports = {
   target: "web",
   output: {
     path: path.resolve(__dirname, "dist"),
-    publicPath: "", // For GitHub Pages
+    publicPath: "",
     clean: true,
   },
   module: {
