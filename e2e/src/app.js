@@ -11,7 +11,7 @@ export function renderValidatorWidget() {
     <ul class="cards" data-role="cards" aria-label="Платёжные системы">
       <li class="card" data-card="visa" title="Visa"><img src="${visaSvg}" alt="Visa" /></li>
       <li class="card" data-card="mastercard" title="Mastercard"><img src="${mastercardSvg}" alt="Mastercard" /></li>
-      <li class="card" data-card="mir" title="Мир"><img src="${mirSvg}" alt="Мир" /></li>
+      <li class="card" data-card="mir" title="Мир"><img src="${mirSvg}" alt="Mir" /></li>
     </ul>
 
     <form class="form" data-role="form" novalidate>
